@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MixDemo-Swift.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    SwiftDemo* demo = [[SwiftDemo alloc] init];
+    [demo logMe];
+}
+
+- (void)logYou {
+    NSLog(@"log you");
 }
 
 - (void)didReceiveMemoryWarning {

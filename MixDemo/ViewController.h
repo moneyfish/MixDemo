@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (void) logYou;
 
 @end
 
