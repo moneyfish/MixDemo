@@ -12,5 +12,11 @@
 
 - (void) logYou;
 
+- (void) logMe:(NSString*)logMe logYou:(NSString*)logYou;
+
++ (void) ocStaticFunc:(NSString*)log;
+
++ (void) stringParams:(NSString*)params args:(va_list)args;
+
 @end
 

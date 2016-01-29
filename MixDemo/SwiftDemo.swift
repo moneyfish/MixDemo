@@ -17,6 +17,20 @@ public class SwiftDemo : NSObject {
         
         let vc = ViewController()
         vc.logYou()
+        
+        vc.logMe("log me", logYou: "log you")
+        
+        ViewController.ocStaticFunc("swift call oc static func")
+        
+        let args: [CVarArgType] = ["i'm", " showhilllee"]
+        withVaList(args) {
+            (pointer: CVaListPointer) in
+            return ViewController.stringParams("%@,%@", args:pointer)
+        }
+    }
+    
+    public static func swiftStaticFunc(log: NSString) {
+        print(log);
     }
     
 }
